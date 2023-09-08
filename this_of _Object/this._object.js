@@ -33,3 +33,17 @@ const movies1={
 };
 
 movies1.giveDetails()
+
+const movies2={
+    title:'Movies 2',
+    year:2010,
+    genre:'Action,Sci-Fi ,Thriller',
+    cast:'Robert Downey Jr,Chris Evans',
+    //The another way of writing the function inside object is
+    giveDetails(){
+        console.log(`Title:${this.title}\nYear:${this.year}\nGenre:${this.genre}\nCast:${this.cast}`)
+        //the this refers to the object movies its like this object ka title give,genre give
+    }
+};
+
+movies2.giveDetails()
