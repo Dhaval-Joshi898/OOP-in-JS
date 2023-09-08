@@ -19,3 +19,15 @@ console.log(movie1)
 //Now Accesing the Function inside the object with the object name
 
 movie1.getDetails()
+
+
+//THis is also valid for creating constructor  
+// let Car=function(name,color){
+//     return{
+//         name:name,
+//         color:color
+//     }
+// }
+
+// let c=new Car('audi','white')
+// console.log(c)
