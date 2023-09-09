@@ -6,3 +6,5 @@ function Game(name,plat){
 const fifa=new Game('fif','PS')
 console.log(fifa.__proto__===Game.prototype)
 console.log(fifa.__proto__.__proto__===Object.prototype)
+
+//True True
