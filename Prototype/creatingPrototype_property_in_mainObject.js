@@ -16,6 +16,7 @@ const Movie=function(title){
 Object.prototype.getDetails = function(){
     console.log(`Title of movie is: ${this.title}`)
 }
+// this will inherit the method from the prototype and not make a copy in all objects
 //Now check the developer tool chrome to see this getDetails method is present isnide the prototype
 
 
