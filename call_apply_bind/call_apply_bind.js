@@ -1,3 +1,4 @@
+//call appy bind is only to reuse some function within an object we can point or link that function to another object.
 const car={
     name:'car',
     color:'black',
@@ -29,3 +30,13 @@ car.getDetails.call(bus,'Mercedes',40)  //call is the keyoword which will bind '
 //The apply method will work in the same manner BUT it will take arguments as an arrays of arguments.apply(this,[arg1,arg2])
 
 car.getDetails.apply(bus,['BMW',50])
+
+//The bind method
+
+//bind we can  make reusable
+
+const vehicle1=car.getDetails.bind(bus)
+//now i can use vehicle1 to call the method anytime i want
+vehicle1('Ferrari',45)
+//again i can call this with different arguments
+vehicle1('Gold',40)
