@@ -17,3 +17,6 @@ const {a,b}=values      //--> it is similar to const a = values.a
 
 console.log(a)
 
+const {c:c1}=values   //here i can change the name of variable and assigned values
+console.log(c1)
+// console.log(c)   this will give error because c is not defined and c-> is c1
