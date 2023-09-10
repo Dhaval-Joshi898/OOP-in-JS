@@ -24,3 +24,8 @@ const  bus={
 
 car.getDetails.call(bus,'Mercedes',40)  //call is the keyoword which will bind 'this' of getDetails to whatever object you want 
 //Output is:This is blue bus of Mercedes company.It has 40 seats.
+
+
+//The apply method will work in the same manner BUT it will take arguments as an arrays of arguments.apply(this,[arg1,arg2])
+
+car.getDetails.apply(bus,['BMW',50])
