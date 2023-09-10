@@ -20,3 +20,18 @@ console.log(a)
 const {c:c1}=values   //here i can change the name of variable and assigned values
 console.log(c1)
 // console.log(c)   this will give error because c is not defined and c-> is c1
+
+
+//Assignment pattern
+const car={
+    name:'Audi',
+    color:'red'
+}
+
+let color;
+({color:color}=car)
+console.log(color)     // assigned the color property to let color variable
+
+// let name;
+// ({color:name}=car)
+// console.log(name)
